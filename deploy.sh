@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -xe
+
 hugo
 cd ./public
 git add .
