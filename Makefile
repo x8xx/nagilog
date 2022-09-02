@@ -3,10 +3,10 @@ server:
 
 deploy:
 	mdbook build
-	cp -r ./book/* ./x8xx.github.io/
-	cd ./x8xx.github.io
-	git add .
-	git commit -m ":book: update"
+	\cp -rf ./book/* ./x8xx.github.io/
+	cd ./x8xx.github.io && \
+	git add . && \
+	git commit -m ":book: update" && \
 	git push origin master
 
-.PHONY: server build
+.PHONY: server deploy
