@@ -3,7 +3,8 @@ server:
 
 deploy:
 	mdbook build
-	cd ./book
+	cp -r ./book/* ./x8xx.github.io/
+	cd ./x8xx.github.io
 	git add .
 	git commit -m ":book: update"
 	git push origin master
