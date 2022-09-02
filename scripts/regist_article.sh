@@ -27,5 +27,5 @@ echo $ARTICLE_MD_LINK >> ./src/all.md
 
 for tag in $TAGS
 do
-    echo $ARTICLE_MD_LINK >> ./src/$SRC_TAGS_DIR_NAME/$tag.md
+    echo "- [$ARTICLE_NAME ($ARTICLE_DATE)](.$ARTICLE_PATH)" >> ./src/$SRC_TAGS_DIR_NAME/$tag.md
 done
