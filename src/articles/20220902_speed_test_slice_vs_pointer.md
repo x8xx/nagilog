@@ -13,7 +13,7 @@ pointer_time: 0.485
 コードはこれ
 
 変に最適化されないようにしたつもり
-```
+```Rust
 use std::time::Instant;
 use rand::Rng;
 
