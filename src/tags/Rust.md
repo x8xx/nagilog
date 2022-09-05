@@ -1,2 +1,3 @@
 # tag: Rust
 - [Rustのスライスとポインタの速度比較 (20220902)](../articles/20220902_speed_test_slice_vs_pointer.md)
+- [wasmerでランタイム上からホスト関数を呼び出すメモ (20220905)](../articles/20220905/20220905_wasmer.md)
