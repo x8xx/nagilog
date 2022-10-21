@@ -15,6 +15,6 @@ deploy:
 	echo "commit nagilog"
 	git add .
 	git commit -m ":book: update"
-	git push origin master
+	git push -f origin master
 
 .PHONY: server deploy
