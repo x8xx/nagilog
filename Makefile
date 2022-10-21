@@ -8,7 +8,7 @@ deploy:
 	cd ./x8xx.github.io && \
 	git add . && \
 	git commit -m ":book: update" && \
-	git push origin master
+	git push -f origin master
 	echo "commit nagilog"
 	git add .
 	git commit -m ":book: update"
