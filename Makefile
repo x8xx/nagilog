@@ -3,7 +3,10 @@ server:
 
 deploy:
 	mdbook build
-	\cp -rf ./book/* ./x8xx.github.io/
+	mv ./x8xx.github.io/.git ./.git.bak 
+	rm -rf ./x8xx.github.io/
+	mv ./book/ ./x8xx.github.io/
+	mv ./.git.bak ./x8xx.github.io/.git
 	echo "commit x8xx.github.io"
 	cd ./x8xx.github.io && \
 	git add . && \
