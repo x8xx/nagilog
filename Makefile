@@ -1,6 +1,9 @@
 server:
 	mdbook serve -n 0.0.0.0 -p 3000
 
+build:
+	./scripts/regist_article.sh
+
 deploy:
 	mdbook build
 	mv ./x8xx.github.io/.git ./.git.bak 
@@ -17,4 +20,7 @@ deploy:
 	git commit -m ":book: update"
 	git push origin master
 
-.PHONY: server deploy
+syntax:
+	cat ./nagilog.yml | yq > /dev/null
+
+.PHONY: server build deploy syntax

@@ -1,0 +1,16 @@
+Tags:
+  Rust: ./tags/rust.md
+  WASM: ./tags/wasm.md
+
+Articles:
+  - date: 202209020000
+    title: Rustのスライスとポインタの速度比較
+    path: ./articles/20220902_speed_test_slice_vs_pointer.md
+    tags: 
+      - "Rust"
+  - date: 202209050000
+    title: wasmerでランタイム上からホスト関数を呼び出すメモ
+    path: ./articles/20220905_wasmer.md
+    tags: 
+      - "Rust"
+      - "WASM"
