@@ -73,7 +73,8 @@ done
 echo "" >> ./src/SUMMARY.md
 echo "- [all](./all.md)" >> ./src/SUMMARY.md
 IFS=$'\n'
-for line in `cat ./src/all.md | head -n 10`
+# for line in `cat ./src/all.md | head -n 10`
+for line in `cat ./src/all.md`
 do
     echo "    "$line >> ./src/SUMMARY.md
 done
